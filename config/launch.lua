@@ -6,16 +6,23 @@ local options = {
 }
 
 if platform.is_win then
-   options.default_prog = { 'pwsh', '-NoLogo' }
+   options.default_prog = { 'ssh' , 'gpunode' }
    options.launch_menu = {
-      { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
-      { label = 'PowerShell Desktop', args = { 'powershell' } },
-      { label = 'Command Prompt', args = { 'cmd' } },
-      { label = 'Nushell', args = { 'nu' } },
       {
-         label = 'Git Bash',
-         args = { 'C:\\Users\\kevin\\scoop\\apps\\git\\current\\bin\\bash.exe' },
+         label = 'mne3',
+         args = { 'ssh', 'mnemosyne3' },
       },
+      {
+         label = 'mne4',
+         args = { 'ssh' , 'mnemosyne4'},
+      },
+      {
+         label = 'gpunode',
+         args = { 'ssh' , 'gpunode'},
+      },
+      { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
+
+
    }
 elseif platform.is_mac then
    options.default_prog = { '/opt/homebrew/bin/fish', '-l' }
@@ -26,7 +33,7 @@ elseif platform.is_mac then
       { label = 'Zsh', args = { 'zsh', '-l' } },
    }
 elseif platform.is_linux then
-   options.default_prog = { 'fish', '-l' }
+   options.default_prog = { 'zsh', '-l' }
    options.launch_menu = {
       { label = 'Bash', args = { 'bash', '-l' } },
       { label = 'Fish', args = { 'fish', '-l' } },
