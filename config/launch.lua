@@ -13,6 +13,10 @@ if platform.is_win then
          args = { 'ssh', 'mnemosyne3' },
       },
       {
+         label = 'h100',
+         args = { 'ssh', 'h100' },
+      },
+      {
          label = 'mne4',
          args = { 'ssh' , 'mnemosyne4'},
       },
