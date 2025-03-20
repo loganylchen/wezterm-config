@@ -33,6 +33,8 @@ elseif platform.is_mac then
    options.launch_menu = {
       { label = 'mne3', args = { 'ssh', 'mnemosyne3' } },
       { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
+      { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
+      { label = 'h100', args = { 'ssh', 'h100' }},
    }
 elseif platform.is_linux then
    options.default_prog = { 'zsh', '-l' }
