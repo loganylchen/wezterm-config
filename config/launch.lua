@@ -8,23 +8,11 @@ local options = {
 if platform.is_win then
    options.default_prog = { 'ssh' , 'gpunode' }
    options.launch_menu = {
-      {
-         label = 'mne3',
-         args = { 'ssh', 'mnemosyne3' },
-      },
-      {
-         label = 'h100',
-         args = { 'ssh', 'h100' },
-      },
-      {
-         label = 'mne4',
-         args = { 'ssh' , 'mnemosyne4'},
-      },
-      {
-         label = 'gpunode',
-         args = { 'ssh' , 'gpunode'},
-      },
-      { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
+      { label = 'mne3', args = { 'ssh', 'mnemosyne3' } },
+      { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
+      { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
+      { label = 'h100', args = { 'ssh', 'h100' }},
+      { label = '118', args = {'ssh', '118'}},
 
 
    }
@@ -35,6 +23,7 @@ elseif platform.is_mac then
       { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
       { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
       { label = 'h100', args = { 'ssh', 'h100' }},
+      { label = '118', args = {'ssh', '118'}},
    }
 elseif platform.is_linux then
    options.default_prog = { 'zsh', '-l' }
