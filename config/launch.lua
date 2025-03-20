@@ -13,6 +13,7 @@ if platform.is_win then
       { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
       { label = 'h100', args = { 'ssh', 'h100' }},
       { label = '118', args = {'ssh', '118'}},
+      { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
 
 
    }
