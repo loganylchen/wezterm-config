@@ -6,7 +6,7 @@ local options = {
 }
 
 if platform.is_win then
-   options.default_prog = { 'ssh' , 'gpunode' }
+   options.default_prog = { 'wsl' }
    options.launch_menu = {
       { label = 'mne3', args = { 'ssh', 'mnemosyne3' } },
       { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
