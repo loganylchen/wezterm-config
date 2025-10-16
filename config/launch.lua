@@ -12,7 +12,7 @@ if platform.is_win then
       { label = 'mne3', args = { 'ssh', 'mnemosyne3' } },
       { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
       { label = 'mne5', args = { 'ssh', 'mnemosyne5' } },
-      { label = 'gpunode', args = { 'ssh' , 'tfc-gpu'} },
+      { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
       { label = 'h100', args = { 'ssh', 'h100' }},
       { label = '118', args = {'ssh', '118'}},
       { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
@@ -26,7 +26,7 @@ elseif platform.is_mac then
       { label = 'mne3', args = { 'ssh', 'mnemosyne3' } },
       { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
       { label = 'mne5', args = { 'ssh', 'mnemosyne5' } },
-      { label = 'gpunode', args = { 'ssh' , 'tfc-gpu'} },
+      { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
       { label = 'h100', args = { 'ssh', 'h100' }},
       { label = '118', args = {'ssh', '118'}},
    }
@@ -37,7 +37,7 @@ elseif platform.is_linux then
       { label = 'mne3', args = { 'ssh', 'mnemosyne3' } },
       { label = 'mne4', args = { 'ssh', 'mnemosyne4' } },
       { label = 'mne5', args = { 'ssh', 'mnemosyne5' } },
-      { label = 'gpunode', args = { 'ssh' , 'tfc-gpu'} },
+      { label = 'gpunode', args = { 'ssh' , 'gpunode'} },
       { label = 'h100', args = { 'ssh', 'h100' }},
       { label = '118', args = {'ssh', '118'}},
    }
